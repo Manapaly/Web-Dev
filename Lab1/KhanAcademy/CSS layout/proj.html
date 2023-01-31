@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="utf-8">
+    <title>Project: Event invite</title>
+    <style>
+        header{
+            padding: 2px;
+            background-color: aqua;
+        }
+        header > h1{
+            text-align: center;
+        }
+        .details{
+            margin: 0 50px;
+            background-image: url("https://www.contiki.com/six-two/wp-content/uploads/2015/09/sarthak-navjivan-iTZOPe7BpTM-unsplash.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            object-fit: cover;
+            /* width: auto; */
+            height: 500px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+            color: olivedrab;
+        }
+        .details  a{
+            /*text-decoration: none;*/
+            color: white;
+        }
+        .setName{
+            height: 50px;
+            background-color: #697681;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+        }
+        .setName input{
+            background-color: #222222;
+            color: white;
+            padding: 5px;
+        }
+        .setName button{
+            background-color: #222222;
+            color: white;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div id="info">
+        <header>
+            <h1>You are invited to Bob's party</h1>
+        </header>
+        <div class="details">
+            <h2>The details:</h2>
+            <ul>
+                <li><a href="">Location</a></li>
+                <li><a href="">Date</a></li>
+                <li><a href="">Gift</a></li>
+            </ul>
+        </div>
+        <div class="setName">
+            <input type="text" name="" placeholder="Введите имя">
+            <input type="text" name="" placeholder="Введите фамилию">
+            <button>Включить в список гостей</button>
+        </div>
+    </div>
+</body>
+</html>
