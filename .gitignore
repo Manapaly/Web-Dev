@@ -113,3 +113,6 @@ Thumbs.db
 my-first-env/
 second-env/
 env/
+
+Lab5/node_modules
+Lab5/.angular
