@@ -25,5 +25,8 @@
 		<span>
             rating: {{product.rating}}
         </span>
-		<div class="like" id="like" (click)="like(product.id)">like: {{ product.like }}</div>
+		<div class="like" id="like" (click)="like(product.id)">♥ {{ product.like }}</div>
+		<button type="button" (click)="remove()" >
+			Remove
+		</button>
 	</div>

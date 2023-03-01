@@ -1,0 +1,12 @@
+.product-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.card{
+    border: 1px solid darkred;
+    width: calc(33% - 25px);
+    height: 430px;
+    padding: 10px;
+}

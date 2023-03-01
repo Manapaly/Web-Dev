@@ -24,6 +24,9 @@ export class ProductItemComponent implements OnInit{
     window.open("https://wa.me/79172907400?text=Хочу приобрести товар по ссылке " + src,  'menubar=off,toolbar=off')
   }
 
+  remove(){
+    products.splice(this.product.id-1, 1)
+  }
   Buy(src: string | URL | undefined) {
     window.open(src);
   }
