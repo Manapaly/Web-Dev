@@ -19,6 +19,8 @@ export class ProductListComponent {
   Buy(src: string | URL | undefined) {
     window.open(src);
   }
+
+
 }
 
 

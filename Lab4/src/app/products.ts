@@ -7,6 +7,8 @@ export interface Product {
   description: string;
   src: string;
   rating: number;
+  like: number;
+  category: string;
 }
 
 export const products = [
@@ -21,7 +23,9 @@ export const products = [
         'объем встроенной памяти: 128 ГБ\n' +
         'емкость аккумулятора: 5000 мАч',
     src: 'https://kaspi.kz/shop/p/samsung-galaxy-a23-6-gb-128-gb-chernyi-104348541/?c=750000000#!/item',
-    rating: 4
+    rating: 4,
+    category: '',
+    like: 0
   },
   {
     id: 2,
@@ -34,7 +38,9 @@ export const products = [
         'объем встроенной памяти: 128 ГБ\n' +
         'емкость аккумулятора: 5000 мАч',
     src: 'https://kaspi.kz/shop/p/xiaomi-redmi-10c-4-gb-128-gb-seryi-104417231/?c=750000000#!/item',
-    rating: 3
+    rating: 3,
+    category: '',
+    like: 0
   },
   {
     id: 3,
@@ -47,7 +53,9 @@ export const products = [
         'объем встроенной памяти: 256 ГБ\n' +
         'емкость аккумулятора: 5020 мАч',
     src: 'https://kaspi.kz/shop/p/xiaomi-redmi-note-10-pro-8-gb-256-gb-seryi-107221005/?c=750000000#!/item',
-    rating: 3
+    rating: 3,
+    category: '',
+    like: 0
   },
   {
     id: 4,
@@ -60,7 +68,9 @@ export const products = [
         'объем встроенной памяти: 128 ГБ\n' +
         'емкость аккумулятора: 5000 мАч',
     src: 'https://kaspi.kz/shop/p/samsung-galaxy-a13-4-gb-128-gb-chernyi-104253279/?c=750000000#!/item',
-    rating: 5
+    rating: 5,
+    category: '',
+    like: 0
   },
   {
     id: 5,
@@ -73,7 +83,9 @@ export const products = [
         'объем встроенной памяти: 128 ГБ\n' +
         'емкость аккумулятора: 3095 мАч',
     src: 'https://kaspi.kz/shop/p/apple-iphone-13-128gb-chernyi-102298404/?c=750000000#!/item',
-    rating: 5
+    rating: 5,
+    category: '',
+    like: 0
   },
   {
     id: 6,
@@ -86,7 +98,9 @@ export const products = [
         'объем встроенной памяти: 256 ГБ\n' +
         'емкость аккумулятора: 3095 мАч',
     src: 'https://kaspi.kz/shop/p/apple-iphone-14-pro-max-256gb-fioletovyi-106363342/?c=750000000#!/item',
-    rating: 5
+    rating: 5,
+    category: '',
+    like: 0
   },
   {
     id: 7,
@@ -99,7 +113,9 @@ export const products = [
         'объем встроенной памяти: 128 ГБ\n' +
         'емкость аккумулятора: 5000 мАч',
     src: 'https://kaspi.kz/shop/p/samsung-galaxy-a33-5g-6-gb-128-gb-chernyi-104398547/?c=750000000#!/item',
-    rating: 4
+    rating: 4,
+    category: '',
+    like: 0
   },
   {
     id: 8,
@@ -112,7 +128,9 @@ export const products = [
         'объем встроенной памяти: 32 ГБ\n' +
         'емкость аккумулятора: 3000 мАч',
     src: 'https://kaspi.kz/shop/p/bq-6051g-soul-2-32gb-sinii-102903894/?c=750000000#!/item',
-    rating: 1
+    rating: 1,
+    category: '',
+    like: 0
   },
   {
     id: 9,
@@ -125,7 +143,9 @@ export const products = [
         'объем встроенной памяти: 16 ГБ\n' +
         'емкость аккумулятора: 2200 мАч',
     src: 'https://kaspi.kz/shop/p/bq-5565l-fest-2-16gb-sirenevyi-103187156/?c=750000000#!/item',
-    rating: 2
+    rating: 2,
+    category: '',
+    like: 0
   },
   {
     id: 10,
@@ -138,7 +158,9 @@ export const products = [
         'объем встроенной памяти: 16 ГБ\n' +
         'емкость аккумулятора: 2200 мАч',
     src: 'https://kaspi.kz/shop/p/bq-5565l-fest-2-16gb-zelenyi-103187236/?c=750000000#!/item',
-    rating: 2
+    rating: 2,
+    category: '',
+    like: 0
   },
   {
     id: 11,
@@ -151,7 +173,9 @@ export const products = [
         'объем встроенной памяти: 64 ГБ\n' +
         'емкость аккумулятора: 5000 мАч',
     src: 'https://kaspi.kz/shop/p/nokia-g11-plus-4-gb-64-gb-seryi-106514096/?c=750000000#!/item',
-    rating: 1
+    rating: 1,
+    category: '',
+    like: 0
   },
 ];
 
