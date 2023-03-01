@@ -8,6 +8,8 @@ import { TopBarComponent } from './top-bar/top-bar.component';
 import { ProductListComponent } from './product-list/product-list.component';
 import { ProductAlertsComponent } from './product-alerts/product-alerts.component';
 import { CategoriesComponent } from './categories/categories.component';
+import { FilteredCategoriesComponent } from './filtered-categories/filtered-categories.component';
+import { ProductItemComponent } from './product-item/product-item.component';
 
 
 @NgModule({
@@ -16,7 +18,9 @@ import { CategoriesComponent } from './categories/categories.component';
     ReactiveFormsModule,
     RouterModule.forRoot([
       { path: 'product-list', component: ProductListComponent },
-      { path: '', component: CategoriesComponent },
+      { path: 'categories', component: CategoriesComponent },
+      {path: 'categories/:name', component: FilteredCategoriesComponent},
+      {path: '', redirectTo: 'categories', pathMatch: 'full'},
     ])
   ],
   declarations: [
@@ -25,6 +29,8 @@ import { CategoriesComponent } from './categories/categories.component';
     ProductListComponent,
     ProductAlertsComponent,
     CategoriesComponent,
+    FilteredCategoriesComponent,
+    ProductItemComponent,
 
   ],
   bootstrap: [

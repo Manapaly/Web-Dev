@@ -1,0 +1,20 @@
+<!--<div *ngIf="loaded">-->
+<!--	<h2>Post detail #{{Product.id}}</h2>-->
+
+<!--	<h4>{{post.title}}</h4>-->
+
+<!--	<p>{{post.body}}</p>-->
+<!--</div>-->
+
+<!--<h3 *ngIf="!loaded">Post item is loading...</h3>-->
+<!--<li *ngFor="let product of filteredProducts">-->
+<!--&lt;!&ndash;	<a routerLink="/posts/{{product.category}}">&ndash;&gt;-->
+<!--&lt;!&ndash;		&ndash;&gt;-->
+<!--&lt;!&ndash;	</a>&ndash;&gt;-->
+<!--	-->
+<!--</li>-->
+<div class="product-list">
+	<div class="card" *ngFor="let product of filteredProducts">
+		<app-product-item [product]="product" ></app-product-item>
+	</div>
+</div>

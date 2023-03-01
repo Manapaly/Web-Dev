@@ -7,6 +7,8 @@ export interface Product {
   description: string;
   src: string;
   rating: number;
+  like: number;
+  category: string;
 }
 
 export const products = [
@@ -22,7 +24,7 @@ export const products = [
         'емкость аккумулятора: 5000 мАч',
     src: 'https://kaspi.kz/shop/p/samsung-galaxy-a23-6-gb-128-gb-chernyi-104348541/?c=750000000#!/item',
     rating: 4,
-    category: '',
+    category: 'Samsung',
     like: 0
   },
   {
@@ -67,7 +69,7 @@ export const products = [
         'емкость аккумулятора: 5000 мАч',
     src: 'https://kaspi.kz/shop/p/samsung-galaxy-a13-4-gb-128-gb-chernyi-104253279/?c=750000000#!/item',
     rating: 5,
-    category: '',
+    category: 'Samsung',
     like: 0
   },
   {
@@ -82,7 +84,7 @@ export const products = [
         'емкость аккумулятора: 3095 мАч',
     src: 'https://kaspi.kz/shop/p/apple-iphone-13-128gb-chernyi-102298404/?c=750000000#!/item',
     rating: 5,
-    category: '',
+    category: 'Apple',
     like: 0
   },
   {
@@ -97,7 +99,7 @@ export const products = [
         'емкость аккумулятора: 3095 мАч',
     src: 'https://kaspi.kz/shop/p/apple-iphone-14-pro-max-256gb-fioletovyi-106363342/?c=750000000#!/item',
     rating: 5,
-    category: '',
+    category: 'Apple',
     like: 0
   },
   {
@@ -112,7 +114,7 @@ export const products = [
         'емкость аккумулятора: 5000 мАч',
     src: 'https://kaspi.kz/shop/p/samsung-galaxy-a33-5g-6-gb-128-gb-chernyi-104398547/?c=750000000#!/item',
     rating: 4,
-    category: '',
+    category: 'Samsung',
     like: 0
   },
   {

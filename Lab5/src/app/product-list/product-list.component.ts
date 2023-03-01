@@ -11,18 +11,7 @@ export class ProductListComponent {
 
   products = [...products];
 
-  share(src: string | URL | undefined) {
-    // window.alert('The product has been shared!');
-    window.open("https://wa.me/79172907400?text=Хочу приобрести товар по ссылке " + src,  'menubar=off,toolbar=off')
-  }
 
-  Buy(src: string | URL | undefined) {
-    window.open(src);
-  }
-
-  like(id: number){
-    products[id-1].like++;
-  }
 }
 
 
