@@ -4,15 +4,28 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
+import {RouterModule} from "@angular/router";
+import { HomeComponent } from './home/home.component';
+import { AlbumDetailComponent } from './album-detail/album-detail.component';
+import { AlbumsComponent } from './albums/albums.component';
+import {FormsModule} from "@angular/forms";
+import { AboutComponent } from './about/about.component';
+import {HttpClientModule} from "@angular/common/http";
 
 @NgModule({
   declarations: [
     AppComponent,
-    TopBarComponent
+    TopBarComponent,
+    HomeComponent,
+    AlbumDetailComponent,
+    AlbumsComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
