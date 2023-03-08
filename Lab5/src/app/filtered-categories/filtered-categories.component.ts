@@ -3,7 +3,7 @@ import {Product, products} from "../products";
 import {ActivatedRoute} from "@angular/router";
 import {Observable} from "rxjs";
 // import {POSTS} from "../fake-db";
-// import {PostService} from "../post.service";
+// import {AlbumService} from "../post.service";
 
 @Component({
   selector: 'app-filtered-categories',

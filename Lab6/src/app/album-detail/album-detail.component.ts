@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import {Album} from "../models";
 import {ActivatedRoute} from "@angular/router";
-import {PostService} from "../post.service";
+import {AlbumService} from "../album.service";
 
 @Component({
   selector: 'app-album-detail',
@@ -9,29 +9,42 @@ import {PostService} from "../post.service";
   styleUrls: ['./album-detail.component.css']
 })
 export class AlbumDetailComponent {
-  album: Album;
-  loaded: boolean;
+  album : Album;
+  loaded : boolean;
+  editableAlbum : Album;
+  edit : boolean;
 
-  constructor(private route: ActivatedRoute,
-              private postService: PostService) {
+  constructor(private postService : AlbumService, private route : ActivatedRoute) {
     this.album = {} as Album;
     this.loaded = true;
+    this.edit = false;
+    this.editableAlbum = {} as Album;
   }
 
-  ngOnInit(): void {
-    // const id = Number(this.route.snapshot.paramMap.get('id'));
-    // if(id){
-    //   let num_id = +id;
-    // }
-    this.route.paramMap.subscribe((params) => {
+  ngOnInit() {
+    this.route.paramMap.subscribe((params) =>{
       const id = Number(params.get('id'));
-      // this.post = POSTS.find((post) => post.id === id) as Post;
+
       this.loaded = false;
-      this.postService.getAlbum(id).subscribe((album) => {
+
+      this.postService.getAlbum(id).subscribe((album) =>{
         this.album = album;
         this.loaded = true;
-      });
+      })
+    })
+  }
+
+  saveChanges(){
+    this.editableAlbum.userId = this.album.userId;
+
+    this.postService.updateAlbum(this.album.id, this.editableAlbum).subscribe((alb) =>{
+      this.album = alb;
     })
 
+    this.edit = !this.edit;
+
+    this.editableAlbum = {} as Album;
   }
+
+
 }

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {Album} from "../models";
-import {PostService} from "../post.service";
+import {AlbumService} from "../album.service";
 
 @Component({
   selector: 'app-albums',
@@ -12,7 +12,7 @@ export class AlbumsComponent implements OnInit {
   newAlbum: Album;
   loaded: boolean;
 
-  constructor(private postService: PostService) {
+  constructor(private postService: AlbumService) {
     this.albums = [];
     this.newAlbum = {} as Album;
     this.loaded = true;

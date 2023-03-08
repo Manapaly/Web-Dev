@@ -1,19 +1,22 @@
-.detail{
-  margin-top: 20px;
+.photos{
   display: flex;
-  flex-direction: column;
-  gap: 20px;
-  width: fit-content;
-  border: 1px solid black;
-  padding: 20px;
+  flex-wrap: wrap;
+  gap: 15px;
 }
 
+.photo{
+  width: 100px;
+  height: 100px;
+}
+.photo > img{
+  width: 100%;
+}
 .return-back a{
   text-decoration: none;
 }
 .return-back i{
-  padding: 5px;
-  font-size: 15px;
+  padding: 10px;
+  font-size: 30px;
   font-weight: bold;
   border: 1px solid black;
   border-radius: 100%;
@@ -24,3 +27,4 @@
   background-color: black;
   color: white;
 }
+
