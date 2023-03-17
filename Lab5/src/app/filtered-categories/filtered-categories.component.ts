@@ -1,4 +1,4 @@
-import { Component  } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {Product, products} from "../products";
 import {ActivatedRoute} from "@angular/router";
 import {Observable} from "rxjs";
@@ -10,7 +10,7 @@ import {Observable} from "rxjs";
   templateUrl: './filtered-categories.component.html',
   styleUrls: ['./filtered-categories.component.css']
 })
-export class FilteredCategoriesComponent {
+export class FilteredCategoriesComponent implements OnInit{
   filteredProducts: Product[];
   loaded: boolean;
 
@@ -44,12 +44,14 @@ export class FilteredCategoriesComponent {
 
   }
 
+
   
     // this.postService.getPosts().subscribe((posts) =>{
     //   this.posts = posts;
     //   this.loaded = true;
     // })
-  }
+
+}
 
 
 
