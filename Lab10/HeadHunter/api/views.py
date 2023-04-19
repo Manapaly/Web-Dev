@@ -21,19 +21,18 @@ def company_list(request):
 
 
 
-def company_detail(request, category_id):
+def company_detail(request, id):
     try:
-        company = Company.objects.get(id=company_id)
+        company = Company.objects.get(id=id)
     except Company.DoesNotExist as e:
-        return JsonResponse({'error': str(e)}, status=400)
+        return JsonResponse({'message': str(e)}, status=400)
 
     if request.method == 'GET':
         return JsonResponse(company.to_json())
     elif request.method == 'PUT':
         data = json.loads(request.body)
-        new_category_name = data.get('name', company.name)
-        # desc = data.get('desc', category.desc)
-        company.name = new_category_name
+        new_company_name = data.get('name', company.name)
+        company.name = new_company_name
         company.save()
         return JsonResponse(company.to_json())
     elif request.method == 'DELETE':
